@@ -1,0 +1,10 @@
+[
+ {
+  "InstFile" : "D:/OpenFPGAPrjs/02_1_uart_diy/gowin_prj/fpga_project/src/uart.v",
+  "InstLine" : 1,
+  "InstName" : "uart",
+  "ModuleFile" : "D:/OpenFPGAPrjs/02_1_uart_diy/gowin_prj/fpga_project/src/uart.v",
+  "ModuleLine" : 1,
+  "ModuleName" : "uart"
+ }
+]

@@ -1,0 +1,16 @@
+{
+ "Files" : [
+  {
+   "Path" : "D:/OpenFPGAPrjs/02_1_uart_diy/gowin_prj/fpga_project/src/uart.v",
+   "Type" : "verilog"
+  }
+ ],
+ "IncludePath" : [
+
+ ],
+ "LoopLimit" : 2000,
+ "ResultFile" : "D:/OpenFPGAPrjs/02_1_uart_diy/gowin_prj/fpga_project/impl/temp/rtl_parser.result",
+ "Top" : "",
+ "VerilogStd" : "verilog_2001",
+ "VhdlStd" : "vhdl_93"
+}
