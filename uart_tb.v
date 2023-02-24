@@ -5,6 +5,8 @@ module testbench();
     reg clk;
     reg uart_rx;
 
+    reg KEYS1;
+
     always #1 clk=~clk;
 
     initial begin
@@ -16,6 +18,7 @@ module testbench();
     initial begin
         clk=1;
         uart_rx=1;
+        KEYS1=1;
 
         #40 uart_rx=0;
         #16 uart_rx=1;
@@ -27,11 +30,15 @@ module testbench();
         #16 uart_rx=1;
         #16 uart_rx=0;
         #16 uart_rx=1;
+
+        #64 KEYS1=0;
+        #64 KEYS1=1;
     end
 
     //Instance
     wire 	uart_tx;
     wire [5:0]	led;
+
 
     uart #(
              .BAUDRATE_CNT 		( 8 		))
@@ -39,9 +46,9 @@ module testbench();
              //ports
              .clk     		( clk     		),
              .uart_rx 		( uart_rx 		),
-             .uart_tx 		(  		),
+             .uart_tx 		(  uart_tx		),
              .led     		( led     		),
-             .KEYS1   		(    		),
+             .KEYS1   		(  KEYS1  		),
              .KEYS2   		(    		)
          );
 
